@@ -1,0 +1,30 @@
+*********** Regex ***********
+
+
+
+
+
+^ --> hat expression --> not using this character --> https://regexone.com/lesson/excluding_characters?
+\., \d, \e, --> any word you need to write you can use "\"
+. --> count position (you have any word or digit)
+\w --> words 
+\s --> space 
+\d --> digits
++ --> atleast one or more
+* --> atleast 0 or more
+\ --> need to write actual character like ? then should write '\?'  -> https://regexone.com/lesson/optional_characters?
+
+^() --> match only a line that begins with the word, Note that this is different than the hat used inside a set of bracket [^...] for excluding characters 
+
+$()  --> match only a line that end with the word restrictly
+() --> groups of characters
+
+| --> 2 or more words match like (cats|dogs)
+
+? --> for giving optional choice 
+a{2} --> specify count of string. means a 2 times (exp : aabc)
+[aujs] --> you can use specific characters or digits.
+[a-z] --> sqaure brackets for limitation
+[A-Z] --> case sensetives matters
+
+https://regexone.com/lesson/misc_meta_characters?

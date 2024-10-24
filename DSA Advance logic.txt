@@ -1,0 +1,36 @@
+DSA Advance -->
+
+largest, frequent, highest, top in questions  --> min HEAP approach 
+shortest, lowest, closest  --> max HEAP 
+
+
+heap approach --> { storing a pair of count and element --> it will store only 
+k element into the heap
+if it exceed than will have to pop the element according min of its 1st value of pair.
+
+
+1, 3
+2, 2
+3, 1
+
+in this 1, 3 wiil be popped out of the heap because 1 is min among 2 and 3.
+
+
+
+ArrayList<ArrayList<Integer>> SCOLLO result=new ArrayList<>();
+ HashMap<Integer, Integer> map=new HashMap<>();
+ PriorityQueue<Integer> min=new PriorityQueue<>(Comparator.comparingInt(map:get));
+ for(int i=0;i<N;i++) {
+      int num-arr[i];
+     map.put(num, map I (getorDefault(num,e):4);
+     if(!min. contains (num)) min.offer(num);
+     if(min.size()>K) min.poll();
+     ArrayList<Integer> curr=new ArrayList<> (min);
+     curr.sort((a,b)->
+           int freqcompare=map.get(b).compareTo(map.get(a));
+           return freqcompare !=0? freqcompare : a.compareTo(b);
+      });
+     result.add(curr);
+}
+ return result;
+

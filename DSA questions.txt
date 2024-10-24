@@ -1,0 +1,61 @@
+Array 
+Maximum subarray sum
+question merge sort --> done
+question 1 matrix --> done;
+question 2 Pascal's Triangle --> not done
+question 3 Next Permutation --> not done
+question 4 kadane's theoram  --> done
+question 5 sorting (merge sort, Dutch National flag algorithm) -->  done
+6  --> buy sale --> done
+7 rotatee matrix --> transpose and reverse --> done
+8  merge overlapping subintervals --> not understand
+9 merge too sorted arrays   --> 1st optimal approach
+10 find-the-duplicate-number --> done
+11. repeat and missing number -->hashing missing and repeating numbers--> done
+12. Inversion of Array (Pre-req: Merge Sort)--> done with 2 loops 
+but understood with merge sort
+13 mergirg two sorted arrays with two pointer -->done
+14 Search in a 2 D matrix --> flatten the 2d matrix and appply binary search to sort this 
+getting row and col from mid by divide and module respectively
+15. Pow(x, n)   --> 2^10 --> 4^5 --> 4 * 16^2  so on
+	--> done
+16. Majority Element (>n/2 times) --> done
+17. Majority Element (n/3 times) --> done with hashsing only
+18. grid unique paths --> not done
+20. reverse pairs (hard) --> done but not fully understtod
+21. two sum --> done
+22 three sum --> hashing and two pointer need to write in the note book
+23. longest consecutive sequence --> done
+
+String 
+
+reverse of string 3 questions --> done
+1. "you look good" --> "good look you" --> string[]
+2. "you look good" --> "doog kool uoy"  ---> 2 pointer
+3. "r#aa$pid&&"  --> "d#ip$aar&&"   --> 2 pointer
+
+4***. longest substring palindrome --> done need to write in the book (looking from around from current element)
+5. roman to integer ---> done  (look for previous bigger than current word)
+6. longest common prefix --> done very easy way by looking for two strings and find the common one out
+and than just look for that common and next string
+
+****####
+7. TRIE  learn and there is problems related to that is word wrap
+****####
+8. 	Count and say --> not done
+9. done
+
+
+Linked List
+
+middle 
+length
+reverse
+merge two sorted
+remove nth element from end
+add two numbers as linkedlist
+
+
+
+
+

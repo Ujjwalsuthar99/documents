@@ -1,0 +1,258 @@
+1. show process list in db is a function 
+2. package-lock should not be deleted in saas vehicle backend
+
+$bean->['balance_tenure_c'] == 1;
+
+
+ELK *****
+User: ujjwalsuthar
+Password: !aQ0eJ06&0lB
+******
+
+commit pull push
+pull
+switch krke ummed uat pr
+pull
+merge meri branch
+push
+switch krke apni branch pe agya
+
+9. Ummeed@123# --> $2y$10$Nv3E/FXxuY7Cc/OWQVtez.RZiDbWOHbinY9qaZAYv/IfkoTTZTnvW
+7. for getting parent branch of any branch --> git log --first-parent
+8. particular file stash --> sudo git stash -- {filepath}
+1. for revert previous commit before push --> git reset --soft HEAD@{1}
+2. for updating new column from another table data --> UPDATE syn_loan_contacts_1_c t1, contacts_cstm t2
+							SET t1.customer_id_c = t2.customer_id_c
+							WHERE t1.syn_loan_contacts_1contacts_idb = t2.id_c
+3. pm2 start command --> pm2 start npm --name "nbfc" -- start
+4. alter auto_increament  --> ALTER TABLE tbl_name AUTO_INCREMENT = 0;
+5. heap out of memory --> set NODE_OPTIONS=--max-old-space-size=8192
+6. delete branch locally --> git branch -D branch_name
+9. delete branch on remote --> git push origin --delete <branch_name>
+10. check ports  --> sudo lsof -i : 3306
+11. ssl configuration --> sudo certbot --apache2 (verify on google)
+12. telnet port on ip --> cmd -> telnet 192.168.90.133(ip) 3306(port)
+13. react native live build --> react-native run-android --deviceId=e5ee6f03
+14. SELECT * FROM information_schema.innodb_trx ORDER BY trx_started
+15. sudo service postgresql restart
+16. public ip : sudo dig +short myip.opendns.com @resolver1.opendns.com
+17. private ip : hostname -i
+18. react native build command for customer app -> gradlew clean && gradlew app:assembleRelease / assembleDebug / bundleRelease
+19. port is already runnig somewhere
+	netstat -ano | findstr: 8080 
+	taskKill /PID 20608 /F
+20.
+
+https://crm.ummeedhfc.com/rest-apis/api/static-data?type=ContactUs
+
+CREATE USER 'admin_panel_testing'@'%' IDENTIFIED BY '2%LC7ZD63%Nd';
+GRANT ALL PRIVILEGES ON  admin_panel_testing_los.* To  'admin_panel_testing'@'%'; 
+FLUSH PRIVILEGES;
+
+CREATE USER 'sammy'@'localhost' IDENTIFIED WITH mysql_native_password BY 'password';
+
+
+SonarQube : ujjwalsuthar
+	  : ITkqLVHozCJnbR6
+
+ELK       : ujjwalsuthar
+	  : !aQ0eJ06&0lB
+
+
+
+JAVA Working --------------------------->>>>>>>>>>
+
+java is a platform independent 
+because of .java file convert into .class file which is having bite code in it 
+C++ directing compliing into machine code
+
+in java there is a interpreter which is why java is a platform independent p lang
+
+byte code can run on any of operating systems 
+
+
+***** jdk -> jre -> jvm *****
+
+
+jdk have compiler which compile the .java to .class 
+javac compiler 
+
+
+jre will load all classes to class loader and execute the program 
+
+
+
+JVM 
+
+loading -> read class file and generate binary data(object of a classs, data and files consist)
+and object of this class is created in heap memory
+
+
+linking -> verification .class file having any errors ??
+allocate the memory for all the variables 
+
+initialization -> all the static variables assigned ot there values defined in the code there
+
+JVM contains the stack and heap memory allocation
+stack memory created while program runnning
+
+JVM execute the program line by line (byte code)
+
+suppose one method is executed may times in our code, JVM will execute this same code again and again(repeated) 
+So this is not effiecint
+
+that why 
+JIT comes (just in time compiler )
+
+it is collector 
+do not interpret again again 
+get me from me i will give you the machine code 
+
+
+
+JAVa source code 
+    |
+    |
+   JDK ----> byte code 
+ 		|
+		|
+		JVM ----->>(with the help of JRE) JRE 						(JVM supporter)
+
+JAVA Working -------------------------->>>>>>>>>>>
+
+
+JAVA 8 documentation
+
+microservices related documentation
+JAVA 8 interview questions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function stateList(){
+  var stateList = get_value_dropdown('person_name_c');
+  $("#person_name_c").html(' ');
+  $("#person_name_c").append('<option>Select</option>');
+  $.ajax({
+    url: host_url + 'index.php?entryPoint=fetchList&list=state_list',
+    datatype : 'JSON',
+    type: 'GET',
+    success: function (data){
+      let dataJson=JSON.parse(data);
+      console.log(dataJson);
+      Object.entries(dataJson).forEach(([value, text]) => {
+        console.log(text);
+        $("#person_name_c").append(new Option( text,value));
+      });
+    }
+  });
+
+
+
+
+
+
+
+
+"use strict";
+const helpers = require("./common/helpers");
+const utility = require("./UtilityController");
+const config = require("./config");
+const global = require("./GlobalFunctions");
+const axios = require("axios");
+const poolPromise = require("./database-connection.js").pool;
+const ApplicationFormController = require("./ApplicationFormController");
+
+class applicationIdUpdate {
+    async leadIdJsonUpdate(req, res, param, postData) {
+        let response = {
+            success:[],
+            leadIdNotfound:[],
+        };
+        const body = JSON.parse(postData);
+        console.log("body",body);
+        // EXAMPLE
+        // let body = {
+        //     leadId:[]
+        // }
+        let leadIds = body.leadId;
+        // return helpers.success(res, {"hello" : leadIds});
+        console.log("leadIds",leadIds);
+        console.log("leadIdsleanght",leadIds.length);
+        for (let i = 0; i < leadIds.length; i++) {
+            let leadId = leadIds[i];
+            console.log("leadIdleadId",leadId);
+            if (leadId.length <= 0) {
+                response.leadIdNotfound.push(leadName);
+                continue;
+            }
+            console.log("leadIdleadIdds",leadId);
+            try {
+                let mongoData = await global.getApplicationJSON(leadId);
+                mongoData.applicationId = "";
+                let updateData =
+                    await ApplicationFormController.updateDataInDynamoDb(mongoData);
+            } catch (err) {
+                response.success = false;
+                response.message = "Something went wrong";
+                response.error = err.toString();
+                return helpers.validationError(res, response);
+            }
+        }
+        response.success = true;
+        response.message = "Successfully update applicationId";
+        // response.data = resultLinks;
+        return helpers.success(res, response);
+    }
+}
+
+module.exports = new applicationIdUpdate();
+
+
+
+
+public folder se .htaccess ko hta dia 
+root directory pe .htaccess daal di
+.htaccess file look like -->
+
+<IfModule mod_rewrite.c>
+    <IfModule mod_negotiation.c>
+        Options -MultiViews -Indexes
+    </IfModule>
+
+    RewriteEngine On
+
+    RewriteCond %{REQUEST_FILENAME} -d [OR]
+    RewriteCond %{REQUEST_FILENAME} -f
+    RewriteRule ^ ^$1 [N]
+ 
+    RewriteCond %{REQUEST_URI} (\.\w+$) [NC]
+    RewriteRule ^(.*)$ public/$1 
+ 
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteRule ^ server.php
+
+</IfModule>

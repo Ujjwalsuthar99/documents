@@ -1,0 +1,150 @@
+java is a platform independent 
+because of .java file convert into .class file which is having bite code in it 
+C++ directing compliing into machine code
+
+in java there is a interpreter which is why java is a platform independent p lang
+
+byte code can run on any of operating systems 
+
+
+***** jdk -> jre -> jvm *****
+
+
+jdk have compiler which compile the .java to .class 
+javac compiler 
+
+
+jre will load all classes to class loader and execute the program 
+
+
+
+JVM 
+
+loading -> read class file and generate binary data(object of a classs, data and files consist)
+and object of this class is created in heap memory
+
+
+linking -> verification .class file having any errors ??
+allocate the memory for all the variables 
+
+initialization -> all the static variables assigned ot there values defined in the code there
+
+JVM contains the stack and heap memory allocation
+stack memory created while program runnning
+
+JVM execute the program line by line (byte code)
+
+suppose one method is executed may times in our code, JVM will execute this same code again and again(repeated) 
+So this is not effiecint
+
+that why 
+JIT comes (just in time comiplder )
+
+it is collector 
+do not interpret again again 
+get me from me i will give you the machine code 
+
+
+
+JAVa source code 
+    |
+    |
+   JDK ----> byte code 
+ 		|
+		|
+		JVM ----->>(with the help of JRE) JRE 						(JVM supporter)
+
+
+
+
+*why spring boot comes while spring is there for java applications 
+
+--> spring boot takees this convenience to the next level by focusing specifically on reducing the effort required to set up and configure a spring application
+Auto configurations, standlone applications
+springbootapplication annotation does all the work, 
+embededded server configurations
+
+
+*what spring does 
+
+--> creating web applications, working with databases, managing transactions and more
+but setting a spring project can still invovle bit of manual configurations
+need to set server configurations also
+in spring we have to manually set up the applicationcontext in the main method
+   
+
+
+
+*what is application context 
+
+--> it stored the bean of defined object (classes)
+
+
+*JAR and WAR
+
+--> jar can be run by just command only (java -jar jarfile)
+but in war we have to deploy this file onto the server then we can run
+
+
+*why maven is used for
+--> build automation
+--> dependency manage 
+if u dont have maven install in your system then you can use mvnw which is a maven file present in our local project directory works same as maven.
+
+*maven build lifecycle 
+--> validate, compile, test, package, verify, install, deploy
+
+
+*target folder
+--> when we compile our code the target folder created 
+
+
+IOC 
+--> inversion of control 
+spring will give the bean of object
+it will contain all the class(object)
+  
+
+application context is a way to achieve IOC container
+
+
+*spring lifecycle is also there
+-->
+container start
+bean initiated --> application context 
+dependency manage
+customer init() method
+custom utility method
+customer destroy() method
+
+
+postconstruct and predestroy 
+
+
+ORM --> object relational mapping --> it is a technique to mapped the database column and tables to the related class.
+ 
+JPA --> java persistence API ---> A way to achieve ORM, includes interfaces and annotations that you use in your java classes, required a persistence provider(ORM tools) for impl.
+
+it is a set of rules for ORM
+
+
+persistence provider(ORM tools) --> exp of persistence providers include hibernate, eclipseLink and openJPA.
+we use hibernate as for interacting with database.
+
+
+
+Spring data jpa--> it hides the complexity of JPA and gives the easier way to use JPA
+
+
+***** JPA primarily designed for working with relatiomnal databases. 
+
+
+
+
+
+
+
+
+
+
+

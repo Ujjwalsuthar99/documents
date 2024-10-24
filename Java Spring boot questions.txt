@@ -1,0 +1,25 @@
+What is the difference between JDK, JRE, and JVM?
+Explain the concept of object-oriented programming in Java.
+Explain exception hierarchy in Java.
+Explain purpose of the final, finalize and finally keyword in Java.
+Explain 
+Spring Framework:
+What is the Spring Framework, and what are its key features?
+Explain the difference between Spring MVC and Spring Boot.
+What is Dependency Injection, and how is it implemented in Spring?
+How does Spring AOP (Aspect-Oriented Programming) work?
+What is the purpose of the @Autowired annotation in Spring?
+Spring Boot:
+What are the advantages of using Spring Boot for microservices development?
+Explain the concept of Spring Boot starters.
+How does Spring Boot simplify the development of RESTful APIs?
+What is the purpose of the @SpringBootApplication annotation in a Spring Boot application?
+How does Spring Boot support externalized configuration?
+Hibernate, Jpa and JDBC
+Connection pooling
+
+Fault Tolerance in Micro Services Architecture?
+--> 
+we will make a health check endpoint in every micro service controller to check is the service is running or not in every 10 seconds interval 
+so that if any servive is down we will marks as open service, and on load balancer/ api gateway we will restrict the request to send on the open service, always send on closed service
+

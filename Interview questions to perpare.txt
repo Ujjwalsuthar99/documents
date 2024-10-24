@@ -1,0 +1,127 @@
+
+
+streams --> done
+
+resume 
+what problem i faced concurrency and kafka issue and http context holder
+receipt concurrency problem which faced and fixed by reterent lock and can be fixed by synchronized block
+i have been working on microservice eureka discovery with api gateway on my personal POC project
+
+
+authorization and authentication --> will watch a video
+
+GCP haven't confirm my payment, by so i have not done that
+docker basic  --> done
+
+design pattern  --> singleton and factory 
+internal working of hashmap  --> done
+core java --> done
+monolithic vs microservices --> done
+multithreading , microservices architecture (fault mechanism)  --> done
+sql queries 
+open api
+functional interface
+arrays questions dsa
+webflux, webclient --> done
+aws questions
+sleep method vs wait method 
+wait method revoked the lock of objects in a synchronized block
+sleep method donot revoked the lock 
+
+hashmap and concurrenthashmap
+hashset
+
+Memory leaks and how to avoid them --> use of static words
+hashcode() method and equalsto() method
+
+
+
+let say we have a main class
+where we are autowiring an interface two times 
+which object will pick in it
+in java
+
+
+benefit of string immutability
+shallow copy
+
+DP question but i have done with brute approach
+oops
+memory management
+static keyword
+Stream question
+A a = new B();
+a.printInfo(); // if this method is static // "A"
+
+Static methods are not subject to polymorphism and method overriding like instance methods. They are resolved based on the reference type, not the actual instance type
+
+
+
+
+dependency Injections
+HQL
+hibernate JPA
+web services
+@path variable @Request PAram @RequestBody DTO
+String DSA question
+JAVA 8 feature 
+Singleton
+Streams and Stream Grouping By questions
+pom.xml
+LOMBOK
+dependency me scope kya hota h
+maven lifecycle
+configure the DB connections 
+API process how it works 
+DAO and transaction
+Entity 
+@OneToMany Mapping
+how Lazy loading works 
+if we want child data also in lazy loading how can we achieve ?
+rest template 
+thread pool
+communication between micro services
+fault tolerance (mechanism)
+HTTP methods
+security in spring 
+CORS
+@CrossOrigin
+common annotations @Autowired @Repository
+sql injection attack
+IOC
+actuators
+criteria builders 
+
+
+let say we have a main class
+where we are autowiring an interface two times 
+which object will pick in it
+in java
+
+Stream question on filter().map().collect(collectors.toList)
+benefit of string immutability
+shallow copy
+
+DP question but i have done with brute approach
+oops
+memory management
+static keyword
+
+
+
+
+
+
+
+
+
+
+streams
+anymatch, allmatch --> Boolean
+sorted
+distict
+max, min
+skip, findFirst()
+map, filter --> List
+mapToInt()
+collect(Collectors.groupingBy())

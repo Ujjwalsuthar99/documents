@@ -1,0 +1,51 @@
+have to generate ssh key of my local machine 
+and have to create the ticket for update the SHA address in play console
+
+
+
+
+if my get pdf got 500 error then how to run my code so that it will not impact my method
+
+tech podcasts
+what is rpc faster then rest calls 
+oss and sonar
+
+sqs,
+gRPC is kind of REST or HTTP
+sns in aws
+keycloak
+eks
+open API
+SAGA
+distributed tracking
+performance monitoring code dekhna h 
+kinesis
+pattern ke question krne h
+BeanMap
+terraform
+record as class in java
+LRE cache --> coding 
+NSU cache
+hashmap design --> java coding (how to implement own hashmap in spring)
+solid principle --> with 2 exp coding
+optimistic locking --> one more locking mechanism is there
+connection pooling --> should know the code how to create 			this object pooling
+sleuth
+bloom filters
+volatile keyword in multithreading  -->  multithreading to 					 ensure that updates 					 to a variable are 					 always visible to 					 other threads
+
+@Cacheble annotation
+
+Java 21 version virtual threads
+
+
+172.31.5.253/server-status
+
+Grafana.synoriq.in
+
+java performance profiler
+
+
+
+
+
